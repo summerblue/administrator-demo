@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Faker\Factory as Faker;
 use Carbon\Carbon;
-use App\User;
+use App\Models\User;
 use App\Models\Post;
 
 class PostTableSeeder extends Seeder

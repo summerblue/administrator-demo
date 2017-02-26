@@ -163,11 +163,13 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 
+
         /*
          * Package Service Providers...
          */
 
-        //
+
+    Frozennode\Administrator\AdministratorServiceProvider::class,
 
         /*
          * Application Service Providers...

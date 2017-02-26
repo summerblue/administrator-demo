@@ -4,9 +4,50 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2e1ccc0e0ca0723f609aa84a0206b612",
-    "content-hash": "d9a840fdf53a7a0ac3fb781c7a780eff",
+    "hash": "5ef2f281ba62c493db6ee441a3323edf",
+    "content-hash": "a86f721af44eab95ab022ee20e26f4c6",
     "packages": [
+        {
+            "name": "ckeditor/ckeditor",
+            "version": "4.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ckeditor/ckeditor-releases.git",
+                "reference": "268078ab43195b6004d64bc8764c41f2f829640e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/ckeditor/ckeditor-releases/268078ab43195b6004d64bc8764c41f2f829640e.zip",
+                "reference": "268078ab43195b6004d64bc8764c41f2f829640e",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+",
+                "LGPL-2.1+",
+                "MPL-1.1+"
+            ],
+            "authors": [
+                {
+                    "name": "CKSource",
+                    "homepage": "http://cksource.com"
+                }
+            ],
+            "description": "JavaScript WYSIWYG web text editor.",
+            "homepage": "http://ckeditor.com",
+            "keywords": [
+                "CKEditor",
+                "editor",
+                "fckeditor",
+                "html",
+                "javascript",
+                "richtext",
+                "text",
+                "wysiwyg"
+            ],
+            "time": "2017-01-12 17:36:48"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "3.1.0",
@@ -992,6 +1033,59 @@
                 "uuid"
             ],
             "time": "2016-11-22 19:21:44"
+        },
+        {
+            "name": "summerblue/administrator",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/summerblue/administrator.git",
+                "reference": "c342086863a1b79d19b0ed1f4389f132153eab0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://packagist.phpcomposer.com/files/summerblue/administrator/c342086863a1b79d19b0ed1f4389f132153eab0b.zip",
+                "reference": "c342086863a1b79d19b0ed1f4389f132153eab0b",
+                "shasum": ""
+            },
+            "require": {
+                "ckeditor/ckeditor": "4.*",
+                "laravel/framework": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/controllers"
+                ],
+                "psr-0": {
+                    "Frozennode\\Administrator": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Original: Jan Hartigan, modified by CJ",
+                    "email": "cj@estgroupe.com"
+                }
+            ],
+            "description": "A database interface package for Laravel, modified!",
+            "homepage": "https://github.com/summerblue/administrator",
+            "keywords": [
+                "admin",
+                "administrator",
+                "cms",
+                "database",
+                "laravel",
+                "laravel-administrator"
+            ],
+            "time": "2017-01-31 22:17:37"
         },
         {
             "name": "summerblue/generator",
@@ -3507,7 +3601,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "summerblue/administrator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
