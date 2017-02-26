@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Observers\PostObserver;
+use App\Models\Post;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -12,7 +14,8 @@ class AppServiceProvider extends ServiceProvider
      * @return void
      */
     public function boot()
-    {
+	{
+		Post::observe(PostObserver::class);
         //
     }
 
@@ -23,6 +26,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+
+         if (app()->environment() == 'local' || app()->environment() == 'testing') {
+
+            $this->app->register(\Summerblue\Generator\GeneratorsServiceProvider::class);
+
+        }
     }
 }
